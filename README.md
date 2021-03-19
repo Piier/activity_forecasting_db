@@ -1,1 +1,0 @@
-# activity_forecasting_db
