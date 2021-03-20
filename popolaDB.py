@@ -154,8 +154,7 @@ def createActivity(sensorDict,cursor, nameFile, house):
                 writeEvent(date+" "+time,str(sensorDict[sensor]),value,cont,cursor)
                 
                 
-                if not activity.split("=")[0]==activityStack.pop():
-                    print(line)
+                
                 forQuery=activityQuery.pop()
                 
                 
