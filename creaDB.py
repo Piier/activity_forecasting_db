@@ -139,8 +139,7 @@ def main():
                         typeHouse="Two"
                     else:
                         typeHouse="Single"
-                    cursor.execute("insert into attivita.casa values(\'"+house+"\',\'"+typeHouse+"\');")#Popolazione della tabella casa 
-                    print("Insert completed",end="\n\n")
+                    cursor.execute("insert into activity.house values(\'"+house+"\',\'"+typeHouse+"\');")#Popolazione della tabella casa 
                     sensorDict=createSensor(cursor, fileAnn,house)#Popolazione della tabella sensore
                     createActivity(sensorDict,cursor,fileAnn,house)#Popolazione delle tabelle attivita e evento
                 
