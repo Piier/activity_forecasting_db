@@ -154,7 +154,7 @@ def createActivity(sensorDict,cursor, nameFile, house):
                 writeEvent(date+" "+time,str(sensorDict[sensor]),value,cont,cursor)
                 
                 
-                
+                activityStack.pop()
                 forQuery=activityQuery.pop()
                 
                 
