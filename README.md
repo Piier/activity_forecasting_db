@@ -1,4 +1,5 @@
-# tirocinio
+# Creare e popolare un db con i dataset CASAS
+<p>Non testato sui dataset HH107, HH115, HH121, quindi su di essi potrebbe non funzionare. Per gli altri non dovrebbero esserci problemi</p>
 <h2>creaDB</h2>
 <p>
 Script per creare da 0 il db e popolarlo, i file verranno prima automaticamente formattati.</br>
