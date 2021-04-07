@@ -20,14 +20,14 @@ def typeSensor(sensor):
         return "sensor battery levels"
     if re.findall(r"^D",sensor):
         return "magnetic door sensors"
-    if re.findall(r"^L",sensor):
-        return "light switches"
     if re.findall(r"^LS",sensor):
         return "light sensors"
-    if re.findall(r"^M",sensor):
-        return "infrared motion sensors"
+    if re.findall(r"^L",sensor):
+        return "light switches"
     if re.findall(r"^MA",sensor):
         return "wide-area infrared motion sensors"
+    if re.findall(r"^M",sensor):
+        return "infrared motion sensors"
     if re.findall(r"^T",sensor):
         return "temperature sensors"
      
@@ -216,7 +216,7 @@ def main():
 
     os.chdir(pathDir)
 
-    
+ 
     try:
         connection = psycopg2.connect(user=username_db,
                                     password=password_db,
